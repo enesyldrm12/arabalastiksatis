@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+  <!-- Font-Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <title>Araba Lastikcisi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="container" id="anasayfa">
+    <nav class="navbar navbar-expand navbar-dark">
+      <div class="container">
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav">
+              <li><a href="#anasayfa" class="nav-link active">Anasayfa</a></li>
+              <li><a href="#urun" class="nav-link active">Ürünler</a></li>
+              <form >
+                <div id="box">
+                    <input id="search" placeholder="Ara...">
+                    <i class="fa fa-search"></i>
+                    <button type="button" id="ara" onclick="myfunction()">ara</button>
+                </div>
+             </form>
+             <li><a href="#contact"  class="nav-link active">İletişim</a></li>
+          </ul>
+        </div>
+        <div class="shopping-cart position-relative">
+
+          <button type="button" class="btn-cart btn btn-primary position-relative">
+            <i class="fas fa-shopping-cart"></i>
+            <span id="item-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger mt-2">0</span>
+          </button>
+
+          <div class="shopping-cart-list bg-primary d-none">
+            <b class="fs-5 text-white my-3">Sepet</b>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div>
+      <marquee id="marqu" width="1300" height="400" bgcolor="transparent">
+        <img id="imgmarqu" src="image/indirim1.jpg" width="500px" height="350px">
+        <img id="imgmarqu" src="image/indirim2.jpeg" width="500px" height="350px">
+        <img id="imgmarqu" src="image/indirim3jpeg.jpeg" width="500px" height="350px">
+        <img id="imgmarqu" src="image/indirim4.jpg" width="500px" height="350px">
+      </marquee>
+  </div>
+
+  <!-- section -->
+  <section class="products mt-5" id="urun">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 col-md-6">
+          <div class="card">
+            <img src="image/1_org_zoom.webp" alt="product" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Lassa</h5>
+              <p class="cart-text">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-danger text-white" href="#">Sepete Ekle</a>
+                <span class="price badge rounded-pill bg-warning text-dark d-flex align-items-center">$
+                  170</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="card">
+            <img src="image/goodyear2.jpg" alt="product" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Petsa</h5>
+              <p class="cart-text">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-danger text-white" href="#">Sepete Ekle</a>
+                <span class="price badge rounded-pill bg-warning text-dark d-flex align-items-center">$
+                  80</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="card">
+            <img src="image/goodyear-eagle-f1-asymmetric-5-225-45-r17-91y-fp-lastik.jpg" alt="product" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">GoodYear</h5>
+              <p class="cart-text">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-danger text-white" href="#">Sepete Ekle</a>
+                <span class="price badge rounded-pill bg-warning text-dark d-flex align-items-center">$
+                  70</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="card">
+            <img src="image/pngwing.com.png" alt="product" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Honda</h5>
+              <p class="cart-text">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-danger text-white" href="#">Sepete Ekle</a>
+                <span class="price badge rounded-pill bg-warning text-dark d-flex align-items-center">$
+                  100</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="card">
+            <img src="image/format_webp.jpeg" alt="product" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Fıat</h5>
+              <p class="cart-text">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-danger text-white" href="#">Sepete Ekle</a>
+                <span class="price badge rounded-pill bg-warning text-dark d-flex align-items-center">$
+                  110</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="card">
+            <img src="image/goodyear-eagle-f1-asymmetric-5-225-45-r17-91y-fp-lastik.jpg" alt="product" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Peugout</h5>
+              <p class="cart-text">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-danger text-white" href="#">Sepete Ekle</a>
+                <span class="price badge rounded-pill bg-warning text-dark d-flex align-items-center">$
+                  120</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="card">
+            <img src="image/pngwing.com.png" alt="product" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Pirelli</h5>
+              <p class="cart-text">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-danger text-white" href="#">Sepete Ekle</a>
+                <span class="price badge rounded-pill bg-warning text-dark d-flex align-items-center">$
+                  130</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="card">
+            <img src="image/goodyear2.jpg" alt="product" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Michelin</h5>
+              <p class="cart-text">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-danger text-white" href="#">Sepete Ekle</a>
+                <span class="price badge rounded-pill bg-warning text-dark d-flex align-items-center">$
+                  140</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="card">
+            <img src="image/pngwing.com.png" alt="product" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Bridgestone</h5>
+              <p class="cart-text">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-danger text-white" href="#">Sepete Ekle</a>
+                <span class="price badge rounded-pill bg-warning text-dark d-flex align-items-center">$
+                  150</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="card">
+            <img src="image/pngwing.com.png" alt="product" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Continental</h5>
+              <p class="cart-text">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-danger text-white" href="#">Sepete Ekle</a>
+                <span class="price badge rounded-pill bg-warning text-dark d-flex align-items-center">$
+                  160</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="card">
+            <img src="image/goodyear-eagle-f1-asymmetric-5-225-45-r17-91y-fp-lastik.jpg" alt="product" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">RangeOver</h5>
+              <p class="cart-text">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-danger text-white" href="#">Sepete Ekle</a>
+                <span class="price badge rounded-pill bg-warning text-dark d-flex align-items-center">$
+                  170</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="card">
+            <img src="image/lassa-driveways-225-45-r17-91w-22-lastik.jpg" alt="product" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Audi</h5>
+              <p class="cart-text">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-danger text-white" href="#">Sepete Ekle</a>
+                <span class="price badge rounded-pill bg-warning text-dark d-flex align-items-center">$
+                  180</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="card">
+            <img src="image/pngwing.com.png" alt="product" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Mercedes</h5>
+              <p class="cart-text">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-danger text-white" href="#">Sepete Ekle</a>
+                <span class="price badge rounded-pill bg-warning text-dark d-flex align-items-center">$
+                  190</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="card">
+            <img src="image/lassa-2.jpg" alt="product" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Symbol</h5>
+              <p class="cart-text">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-danger text-white" href="#">Sepete Ekle</a>
+                <span class="price badge rounded-pill bg-warning text-dark d-flex align-items-center">$
+                  200</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="card">
+            <img src="image/2_org_zoom.webp" alt="product" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Seat</h5>
+              <p class="cart-text">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-danger text-white" href="#">Sepete Ekle</a>
+                <span class="price badge rounded-pill bg-warning text-dark d-flex align-items-center">$
+                  210</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-3">
+          <div class="card">
+            <img src="image/format_webp.jpeg" alt="product" class="card-img-top img-fluid">
+            <div class="card-body">
+              <h5 class="card-title">Tofaş</h5>
+              <p class="cart-text">
+                Some quick example text to build on the card title and make up the bulk of the card's
+                content.
+              </p>
+              <div class="d-flex justify-content-between">
+                <a class="btn btn-danger text-white" href="#">Sepete Ekle</a>
+                <span class="price badge rounded-pill bg-warning text-dark d-flex align-items-center">$
+                  220</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br><br>
+  <section id="contact" class="mySection">
+    
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 id="h2i" class="s-heading  fw-bold text-white">İLETİŞİM</h2>
+            <h3 class="s-subheading text-white">Lorem ipsum, dolor sit amet quaerat ex, laboriosam corporis ipsam, cumque officia fugiat enim.</h3>
+        </div>
+        <form class="needs-validation" action="result.php" id="FrmContact" novalidate>
+            <div class="row align-items-stretch mb-5">
+                <div class="col-md-6">
+                    <div class="form-floating mb-4">
+                        <input type="text" id="name" class="form-control" placeholder="Adınız" required>
+                        <label for="name">Adınız <span class="text-danger">*</span></label>
+                        
+                        <div class="invalid-feedback" id="ErrName"></div>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="email" id="email" class="form-control" placeholder="Eposta" required>
+                        <label for="email">Eposta Adresiniz <span class="text-danger">*</span></label>
+                        
+                        <div class="invalid-feedback" id="ErrEmail"></div>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <input type="tel" id="phone" class="form-control" placeholder="Telefon Numaranız" required>
+                        <label for="phone">Telefon Numaranız <span class="text-danger">*</span></label>
+                        
+                        <div class="invalid-feedback" id="ErrPhone"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label class="text-white" for="message">Mesajınız<span class="text-danger">*</span></label>
+                    <input type="text" id="height" class="form-control">
+                    <div class="invalid-feedback" id="ErrMessage"></div>
+                
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="submit" class="btn btn-danger btn-lg text-uppercase py-3 m-5">Mesaj Gönder</button>
+            </div>
+        </form>
+    </div> 
+</section>
+<footer class="footer py-4">
+  <div class="container">
+      
+      <div class="row align-items-center">
+          <div class="col-lg-4 text-lg-start text-muted">
+              Copyright &copy; New Design 2022
+          </div>
+          <div class="col-lg-4 my-3 my-lg-0">
+              <a href="#" class="btn btn-info mx-2">
+                  <i class="bi bi-twitter text-white"></i>
+              </a>
+              <a href="#" class="btn btn-primary mx-2">
+                  <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="btn btn-danger mx-2">
+                  <i class="bi bi-instagram"></i>
+              </a>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+              <a href="#" class="link-info text-decoration-none me-3">Gizlilik Politikası</a>
+              <a href="#" class="link-secondary text-decoration-none ">Anasayfa</a>
+          </div>
+      </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+  
+
+</html>
